@@ -3,7 +3,7 @@ layout: default
 permalink: /blog/
 title: blog
 nav: true
-nav_order: 1
+nav_order: 4
 pagination:
   enabled: true
   collection: posts
@@ -101,13 +101,14 @@ pagination:
 
 {% endif %}
 
-  <ul class="post-list">
+  {% if page.pagination.enabled %}
+    {% assign postlist = paginator.posts %}
+  {% else %}
+    {% assign postlist = site.posts %}
+  {% endif %}
 
-    {% if page.pagination.enabled %}
-      {% assign postlist = paginator.posts %}
-    {% else %}
-      {% assign postlist = site.posts %}
-    {% endif %}
+  {% if postlist.size > 0 %}
+    <ul class="post-list">
 
     {% for post in postlist %}
 
@@ -187,10 +188,13 @@ pagination:
 
     {% endfor %}
 
-  </ul>
+    </ul>
 
-{% if page.pagination.enabled %}
-{% include pagination.liquid %}
-{% endif %}
+    {% if page.pagination.enabled %}
+      {% include pagination.liquid %}
+    {% endif %}
+  {% else %}
+    <p class="post-description">Blog posts will appear here after Markdown files are added to the <code>_posts</code> folder.</p>
+  {% endif %}
 
 </div>
