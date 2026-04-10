@@ -38,11 +38,18 @@ ninja.data = [{
           window.open("https://github.com/BrianBai093", "_blank");
         },
       },{
-        id: 'social-rss',
-        title: 'RSS Feed',
+        id: 'social-email',
+        title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("/feed.xml", "_blank");
+          window.open("mailto:%79%62%32%36%33%36@%63%6F%6C%75%6D%62%69%61.%65%64%75", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/brianbai", "_blank");
         },
       },{
       id: 'light-theme',
