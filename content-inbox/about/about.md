@@ -21,8 +21,7 @@ Research interests, project capability, research experience, and Ph.D. trajector
 
 ### Public Contact
 
-- Email: [yb2636@columbia.edu](mailto\:yb2636@columbia.edu)
+- Email: [yb2636@columbia.edu](mailto:yb2636@columbia.edu)
 - GitHub: [https://github.com/BrianBai093](https://github.com/BrianBai093)
 - LinkedIn: [www.linkedin.com/in/brianbai](http://www.linkedin.com/in/brianbai)
 - Google Scholar: Coming soon
-

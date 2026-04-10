@@ -101,14 +101,15 @@ pagination:
 
 {% endif %}
 
-  {% if page.pagination.enabled %}
-    {% assign postlist = paginator.posts %}
-  {% else %}
-    {% assign postlist = site.posts %}
-  {% endif %}
+{% if page.pagination.enabled %}
+{% assign postlist = paginator.posts %}
+{% else %}
+{% assign postlist = site.posts %}
+{% endif %}
 
-  {% if postlist.size > 0 %}
-    <ul class="post-list">
+{% if postlist.size > 0 %}
+
+<ul class="post-list">
 
     {% for post in postlist %}
 
@@ -193,8 +194,10 @@ pagination:
     {% if page.pagination.enabled %}
       {% include pagination.liquid %}
     {% endif %}
-  {% else %}
-    <p class="post-description">Blog posts will appear here after Markdown files are added to the <code>_posts</code> folder.</p>
-  {% endif %}
+
+{% else %}
+
+<p class="post-description">Blog posts will appear here after Markdown files are added to the <code>\_posts</code> folder.</p>
+{% endif %}
 
 </div>
