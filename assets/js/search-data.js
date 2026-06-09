@@ -48,11 +48,6 @@ ninja.data = [{
           description: "Agentic claim-level reproducibility auditing for machine learning papers and code repositories.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/deepaudit/";
-            },},{id: "projects-e2b-sandbox-agent-skills",
-          title: 'E2B Sandbox Agent Skills',
-          description: "Codex skill package that converts E2B developer documentation into reusable agent workflows.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/e2b-sandbox-agent-skills/";
             },},{id: "projects-malicious-url-detection",
           title: 'Malicious URL Detection',
           description: "Security-oriented ML project combining LSTM URL sequence modeling with handcrafted structural URL features.",
