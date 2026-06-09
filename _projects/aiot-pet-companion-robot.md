@@ -2,7 +2,7 @@
 layout: page
 title: AI-Powered Pet Companion Robot
 description: Raspberry Pi pet companion robot integrating real-time vision, motion control, cloud analysis, and dashboarding.
-img: assets/img/projects/aiot-system-demo.png
+img:
 importance: 4
 category: course
 github: https://github.com/BrianBai093/AIOT-Pet-Accompany-AI-Bot
