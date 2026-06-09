@@ -199,12 +199,12 @@ exclude:
   - _posts/
   - _news/
   - _books/
-    - _teachings/
-    - purgecss.config.js
-    - README.md
-    - readme_preview/
-    - content-inbox/
-    - vendor
+  - _teachings/
+  - purgecss.config.js
+  - README.md
+  - readme_preview/
+  - content-inbox/
+  - vendor
 keep_files:
   - CNAME
   - .nojekyll
