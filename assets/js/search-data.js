@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "projects",
-          description: "Selected research and course projects.",
+          description: "Selected research, systems, and course projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -23,11 +23,21 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "projects-ai-powered-pet-companion-robot",
+        },{id: "projects-agentic-java-formal-verification",
+          title: 'Agentic Java Formal Verification',
+          description: "Multi-agent pipeline that reads Java/Spring Boot code, infers safety properties, and generates JBMC-ready harnesses.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/agentic-java-formal-verification/";
+            },},{id: "projects-ai-powered-pet-companion-robot",
           title: 'AI-Powered Pet Companion Robot',
           description: "Raspberry Pi pet companion robot integrating real-time vision, motion control, cloud analysis, and dashboarding.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/aiot-pet-companion-robot/";
+            },},{id: "projects-cellular-network-traffic-prediction",
+          title: 'Cellular Network Traffic Prediction',
+          description: "Final-year ML project for cellular throughput forecasting with CNN-LSTM sequence modeling and XGBoost residual correction.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/cellular-traffic-prediction/";
             },},{id: "projects-convnext-and-vit-for-hierarchical-open-set-image-classification",
           title: 'ConvNeXt and ViT for Hierarchical Open-Set Image Classification',
           description: "Two-stage hierarchical image classifier with open-set recognition for super-class and sub-class prediction.",
@@ -38,6 +48,16 @@ ninja.data = [{
           description: "Agentic claim-level reproducibility auditing for machine learning papers and code repositories.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/deepaudit/";
+            },},{id: "projects-e2b-sandbox-agent-skills",
+          title: 'E2B Sandbox Agent Skills',
+          description: "Codex skill package that converts E2B developer documentation into reusable agent workflows.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/e2b-sandbox-agent-skills/";
+            },},{id: "projects-malicious-url-detection",
+          title: 'Malicious URL Detection',
+          description: "Security-oriented ML project combining LSTM URL sequence modeling with handcrafted structural URL features.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/malicious-url-detection/";
             },},{id: "projects-multi-turn-assetops",
           title: 'Multi-Turn AssetOps',
           description: "Supervisor-Specialist multi-agent architecture for industrial asset operations and maintenance.",
