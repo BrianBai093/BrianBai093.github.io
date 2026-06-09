@@ -11,38 +11,56 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "projects",
-          description: "Selected projects and case studies.",
+          description: "Selected research and course projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Education, experience, projects, skills, and selected achievements.",
+          description: "Academic CV for PhD applications.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-blog",
-          title: "blog",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/blog/";
-          },
-        },{
-        id: 'social-github',
-        title: 'GitHub',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://github.com/BrianBai093", "_blank");
-        },
-      },{
+        },{id: "projects-ai-powered-pet-companion-robot",
+          title: 'AI-Powered Pet Companion Robot',
+          description: "Raspberry Pi pet companion robot integrating real-time vision, motion control, cloud analysis, and dashboarding.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/aiot-pet-companion-robot/";
+            },},{id: "projects-convnext-and-vit-for-hierarchical-open-set-image-classification",
+          title: 'ConvNeXt and ViT for Hierarchical Open-Set Image Classification',
+          description: "Two-stage hierarchical image classifier with open-set recognition for super-class and sub-class prediction.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/convnext-vit-open-set/";
+            },},{id: "projects-deepaudit",
+          title: 'DeepAudit',
+          description: "Agentic claim-level reproducibility auditing for machine learning papers and code repositories.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/deepaudit/";
+            },},{id: "projects-multi-turn-assetops",
+          title: 'Multi-Turn AssetOps',
+          description: "Supervisor-Specialist multi-agent architecture for industrial asset operations and maintenance.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/multi-turn-assetops/";
+            },},{id: "projects-trueshot",
+          title: 'TrueShot',
+          description: "P2P blockchain prototype for photo provenance verification and network security analysis.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/trueshot/";
+            },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
         handler: () => {
           window.open("mailto:%79%62%32%36%33%36@%63%6F%6C%75%6D%62%69%61.%65%64%75", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/BrianBai093", "_blank");
         },
       },{
         id: 'social-linkedin',
