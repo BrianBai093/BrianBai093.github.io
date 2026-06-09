@@ -5,6 +5,7 @@ description: Raspberry Pi pet companion robot integrating real-time vision, moti
 img: assets/img/projects/aiot-system-demo.png
 importance: 4
 category: course
+github: https://github.com/BrianBai093/AIOT-Pet-Accompany-AI-Bot
 ---
 
 This Columbia AIoT project builds an AI-powered pet companion robot around a Raspberry Pi 5. I led the computer vision and machine learning components, integrating on-device perception, motion control, cloud analysis, and a browser dashboard.

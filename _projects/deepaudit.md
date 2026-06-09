@@ -5,6 +5,7 @@ description: Agentic claim-level reproducibility auditing for machine learning p
 img:
 importance: 1
 category: research
+github: https://github.com/BrianBai093/DeepAudit_0.2
 ---
 
 **DeepAudit: Agentic Evidence-Based Auditing of Machine Learning Reproducibility** is an independent research project on automated ML reproducibility auditing. The system takes a paper PDF and a companion code repository, extracts verifiable claims, maps them to executable repository tasks and metric contracts, runs candidate experiments in isolated environments, and aligns runtime evidence back to paper claims with structured verdicts.

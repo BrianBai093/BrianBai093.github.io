@@ -5,6 +5,7 @@ description: P2P blockchain prototype for photo provenance verification and netw
 img:
 importance: 5
 category: course
+github: https://github.com/BrianBai093/computer_network_project_team2
 ---
 
 **TrueShot** is a computer networks course project that implements a peer-to-peer photo provenance prototype. Devices sign photo-capture records with ECDSA, peers gossip transactions and proof-of-work blocks, and users verify uploaded images as authentic, suspicious, or unknown through exact hashes and perceptual-hash matching.

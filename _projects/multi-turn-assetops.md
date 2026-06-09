@@ -5,7 +5,7 @@ description: Supervisor-Specialist multi-agent architecture for industrial asset
 img:
 importance: 2
 category: research
-github: https://github.com/Coderlicr/Multi-Turn-AssetOps
+github: https://github.com/BrianBai093/AssetOpsBench
 ---
 
 **Multi-Turn AssetOps** studies tool-centric LLM agents for industrial asset operations and maintenance. The project focuses on realistic multi-turn workflows where users ask follow-up questions about sensor evidence, anomaly analyses, failure causes, and maintenance plans.

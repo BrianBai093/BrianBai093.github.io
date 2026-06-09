@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Selected research and course projects.
+description: Selected research, systems, and course projects.
 nav: true
 nav_order: 1
-display_categories: [research, course]
+display_categories: [research, systems, course]
 horizontal: false
 ---
 
