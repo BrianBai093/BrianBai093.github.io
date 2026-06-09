@@ -10,6 +10,8 @@ github: https://github.com/BrianBai093/DeepAudit_0.2
 
 **DeepAudit: Agentic Evidence-Based Auditing of Machine Learning Reproducibility** is an independent research project on automated ML reproducibility auditing. The system takes a paper PDF and a companion code repository, extracts verifiable claims, maps them to executable repository tasks and metric contracts, runs candidate experiments in isolated environments, and aligns runtime evidence back to paper claims with structured verdicts.
 
+> Paper status: manuscript under submission.
+
 The project is motivated by a gap in current reproducibility checks: a repository being installable or runnable does not necessarily show whether the paper's quantitative claims are supported by executable evidence. DeepAudit frames reproducibility auditing as claim-level evidence alignment rather than a binary repository execution test.
 
 ## What I Built
@@ -39,5 +41,3 @@ DeepAudit was evaluated on public ML paper-code pairs with both clean and initia
 - Conda/mamba/venv environment management.
 - Agentic execution and bounded repair for real ML repositories.
 - Structured Markdown and JSON audit reports.
-
-The manuscript is under review / in preparation. Public materials intentionally avoid exposing review-sensitive details beyond the high-level project description.

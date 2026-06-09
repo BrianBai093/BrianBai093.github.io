@@ -10,6 +10,8 @@ github: https://github.com/BrianBai093/AssetOpsBench
 
 **Multi-Turn AssetOps** studies tool-centric LLM agents for industrial asset operations and maintenance. The project focuses on realistic multi-turn workflows where users ask follow-up questions about sensor evidence, anomaly analyses, failure causes, and maintenance plans.
 
+> Paper status: manuscript under submission.
+
 I proposed and designed the **Supervisor-Specialist** architecture and iteratively optimized it under guidance from IBM Research mentors. The architecture replaces a linear Plan-Execute baseline with a supervisor-routed multi-agent workflow that decomposes industrial diagnosis into domain-specialized modules.
 
 ## My Contributions

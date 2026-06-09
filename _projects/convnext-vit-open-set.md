@@ -10,6 +10,8 @@ github: https://github.com/BrianBai093/TransferLearning-ConvNeXt-and-Vision-Tran
 
 This Columbia Neural Networks and Deep Learning project implements a two-stage hierarchical open-set image classification pipeline. The system first predicts a super-class and then routes the image to a super-class-specific sub-class classifier, with support for novelty rejection through confidence thresholding and OpenMax.
 
+Course report: [PDF](/assets/pdf/projects/convnext-vit-open-set-report.pdf)
+
 ## Project Scope
 
 - Built a two-stage hierarchical recognition pipeline in PyTorch.
