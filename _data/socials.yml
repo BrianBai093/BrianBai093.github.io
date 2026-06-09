@@ -1,11 +1,7 @@
-# this file contains the social media links and usernames of the author
-# the socials will be displayed in the order they are defined here
-# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+# Social links are displayed in the order defined here.
+email: yb2636@columbia.edu
 github_username: BrianBai093
-# cv_pdf: /assets/pdf/Yitong_Bai_CV.pdf # path to your CV PDF file
-email: yb2636@columbia.edu # your email address
 linkedin_username: brianbai
-# rss_icon: true # comment this line to hide the RSS icon
-# scholar_userid: your-google-scholar-id
-# wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
-# whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
+scholar_userid:
+cv_pdf:
+rss_icon: false

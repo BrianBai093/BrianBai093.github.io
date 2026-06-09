@@ -1,10 +1,158 @@
 cv:
   name: Yitong Bai
-  label: ""
-  email: ""
-  location: ""
-  website: "https://BrianBai093.github.io"
-  image: ""
-  summary: Add a short professional summary here.
-  social_networks: []
-  sections: {}
+  label: M.S. Student in Computer Engineering, Columbia University
+  email: yb2636@columbia.edu
+  phone: "(646) 221-1046"
+  location: New York, NY
+  website: https://BrianBai093.github.io
+  address:
+    city: New York
+    region: NY
+    countryCode: US
+  summary: >
+    Research interests: LLM agents, multi-agent systems, ML systems, evaluation
+    and verification, reproducibility, trustworthy and human-centered AI.
+
+  social_networks:
+    - network: GitHub
+      username: BrianBai093
+    - network: LinkedIn
+      username: brianbai
+
+  sections:
+    Education:
+      - institution: Columbia University
+        location: New York, NY
+        area: Computer Engineering
+        studyType: M.S.
+        start_date: Sep 2025
+        end_date: Expected Dec 2026
+        highlights:
+          - "GPA: 3.91 / 4.00"
+
+      - institution: Lancaster University
+        location: Lancaster, UK
+        area: Computer Science
+        studyType: B.S. (Hons)
+        start_date: Sep 2023
+        end_date: Jun 2025
+        highlights:
+          - "First Class Honours; GPA: 3.73 / 4.00"
+
+      - institution: Beijing Jiaotong University
+        location: Beijing, China
+        area: Computer Science and Technology
+        studyType: B.S.
+        start_date: Sep 2021
+        end_date: Jun 2023
+        highlights:
+          - "GPA: 3.37 / 4.00"
+          - "BJTU-Lancaster Dual-Degree Program (2+2)"
+
+    Experience:
+      - company: Columbia University, CRIS Lab
+        position: Research Assistant
+        location: New York, NY
+        start_date: Sep 2025
+        end_date: Present
+        summary: "Advisor: Prof. Venkat Venkatasubramanian"
+        highlights:
+          - "Developed DeepAudit, an LLM-agent framework that autonomously verifies whether quantitative claims in ML papers are reproducible from their companion code, replacing labor-intensive manual auditing with a hands-off automated pipeline."
+          - "Proposed a six-level failure taxonomy covering dependency, data, configuration, code, resource, and output failures for automated diagnosis, targeted repair, and interpretable reproducibility verdicts."
+          - "Engineered an end-to-end pipeline spanning claim extraction, environment provisioning, autonomous code execution with LLM-driven replanning, and tolerance-aware verdict generation."
+          - "Evaluated on 20 peer-reviewed ML papers, achieving 80% end-to-end reproduction success with fully traceable execution evidence."
+
+      - company: Columbia University / IBM Research Collaboration
+        position: Research Assistant
+        location: New York, NY
+        start_date: Feb 2026
+        end_date: Present
+        summary: "Mentored by Dhaval Patel, Senior Technical Staff Member, IBM Research"
+        highlights:
+          - "Proposed a Supervisor-Specialist multi-agent architecture with intent routing, layered validation, and dynamic replanning to address the brittleness of linear plan-then-execute pipelines under multi-turn interaction and partial failures."
+          - "Implemented and optimized the architecture in LangGraph on IBM's AssetOpsBench, with specialists for data collection, time-series analysis, failure reasoning, and maintenance planning."
+          - "Designed a world-model-inspired memory module that maintains asset state, diagnostic hypotheses, and action history across turns, improving dialog consistency and reducing redundant tool calls."
+          - "Co-developed a benchmark of 16 multi-turn industrial dialog scenarios spanning fault diagnosis, predictive maintenance, and lifecycle management."
+          - "Evaluated end-to-end task success and failure-recovery behavior, with ablations isolating the contribution of the memory module and supervisor-level replanner."
+
+      - company: SJTU Summer Campus
+        position: Project Leader
+        location: Shanghai, China
+        start_date: Jul 2023
+        end_date: Sep 2023
+        summary: Facial Emotion Recognition with VGG16
+        highlights:
+          - "Built a facial emotion recognition pipeline on the FER-2013 dataset using VGG16-based feature extraction and an MLP classifier."
+          - "Applied data augmentation and feature fusion to improve robustness across emotion categories."
+          - "Led a four-person team, coordinated task division and progress reviews, and completed both implementation and project reports."
+
+      - company: Neusoft Group
+        position: Software Engineering Intern
+        location: Guangzhou, China
+        start_date: Jul 2024
+        end_date: Aug 2024
+        highlights:
+          - "Contributed to development and testing for a university portal system, including frontend refinement, database interface support, and cross-database data matching."
+          - "Worked with heterogeneous data sources to support synchronization and integration across subsystems."
+
+    Publications:
+      - title: "Application and Analysis of the VGG16 Model in Facial Emotion Recognition"
+        authors:
+          - Yitong Bai
+        publisher: Proceedings of DAML 2023
+        releaseDate: 2023
+        url: https://doi.org/10.5220/0012799800003885
+        summary: "Bai, Yitong. Proceedings of DAML 2023, pp. 422-426. DOI: 10.5220/0012799800003885."
+
+    Projects:
+      - name: ConvNeXt and ViT for Hierarchical Open-Set Image Classification
+        summary: "Columbia University, Neural Networks and Deep Learning Project"
+        highlights:
+          - "Built a two-stage hierarchical open-set recognition pipeline in PyTorch for super-class and sub-class prediction."
+          - "Implemented a unified classifier framework with interchangeable ImageNet-pretrained ConvNeXt and ViT backbones for controlled comparison."
+          - "Developed reproducible training utilities, including flexible data loading, automatic validation split, checkpointing, and metric logging."
+          - "Evaluated on a 6,288-image dataset with 3 super-classes and 87 sub-classes."
+          - "On a held-out novel split, improved unseen sub-class recognition from 62.24% to 82.22% using ConvNeXt; compared Softmax-thresholding (91.60%) with OpenMax (59.60%) for novelty rejection."
+
+      - name: Computer Vision and ML Lead, Pet Companion Robot
+        summary: "Columbia University, AIoT Project"
+        highlights:
+          - "Led the computer vision and machine learning components of an AIoT pet robot integrating on-device perception, motion control, cloud analysis, and dashboarding."
+          - "Built real-time dog detection and motion control on Raspberry Pi 5 using YOLO, FastAPI, sensor fusion, and target tracking."
+          - "Developed cloud pipelines for automated image capture, behavior summarization, and a VGG16-based pet emotion classifier exposed through reusable APIs."
+
+    Honors and Awards:
+      - title: Honorable Mention, Mathematical Contest in Modeling
+        date: Mar 2024
+        awarder: COMAP
+
+      - title: Beijing Jiaotong University Scholarship for Academic Progress
+        date: Jun 2022
+        awarder: Beijing Jiaotong University
+        summary: Top 5%
+
+    Skills:
+      - name: Programming Languages
+        keywords:
+          - Python
+          - C
+          - Java
+          - R
+          - SQL
+          - HTML
+
+      - name: ML / LLM Tools
+        keywords:
+          - PyTorch
+          - scikit-learn
+          - NumPy
+          - pandas
+          - LangGraph
+          - RAG
+          - MCP
+
+      - name: Systems
+        keywords:
+          - Linux
+          - Docker
+          - Git

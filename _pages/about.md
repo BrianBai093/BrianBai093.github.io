@@ -7,38 +7,32 @@ subtitle: M.S. Student in Computer Engineering, Columbia University
 profile:
   align: right
   image: yitong-bai-profile.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
     <p><strong>Yitong (Brian) Bai</strong></p>
     <p>M.S. Computer Engineering</p>
     <p>Columbia University</p>
     <p>Expected Dec 2026</p>
+    <p>New York, NY</p>
+    <p><a href="mailto:yb2636@columbia.edu">yb2636@columbia.edu</a></p>
+    <p><a href="https://github.com/BrianBai093">GitHub</a> | <a href="https://www.linkedin.com/in/brianbai">LinkedIn</a></p>
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false
+social: true
 
 announcements:
-  enabled: false # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
+  scrollable: false
+  limit: 0
 
 latest_posts:
   enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  scrollable: false
+  limit: 0
 ---
 
-I am an M.S. student in Computer Engineering at Columbia University, with research interests in agent systems, AI systems, and applied AI. I am especially interested in reliable multi-agent workflows, verifiable intelligent systems, and AI solutions for real-world environments.
+I am an M.S. student in Computer Engineering at Columbia University. My research interests include LLM agents, multi-agent systems, ML systems, evaluation and verification, reproducibility, and trustworthy human-centered AI.
 
-Recently, I have been working on LLM-based agent evaluation, execution, and state tracking, while also exploring broader directions such as AIoT and deployment-oriented intelligent systems. Through this website, I hope visitors can quickly understand my research interests, project experience, and the long-term academic path I am building toward.
+At Columbia's CRIS Lab, I work on **DeepAudit**, an agentic framework for auditing the reproducibility of machine learning papers by linking paper claims to executable evidence in companion code repositories. I am also working on **Multi-Turn AssetOps**, a Columbia / IBM Research collaboration on supervisor-specialist multi-agent systems for industrial asset operations and maintenance.
 
-### Current Focus
-
-- Agent and AI systems
-- Multi-agent evaluation and verification
-- Real-world intelligent workflows
-- AIoT and deployment-oriented intelligent systems
-
-### This Site
-
-This site highlights my research interests, project capability, research experience, and Ph.D. trajectory.
+Before Columbia, I completed a B.S. (Hons) in Computer Science at Lancaster University and studied Computer Science and Technology at Beijing Jiaotong University through the BJTU-Lancaster dual-degree program.

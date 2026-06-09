@@ -1,21 +1,145 @@
 {
   "basics": {
     "name": "Yitong Bai",
-    "label": "",
-    "email": "",
-    "url": "https://BrianBai093.github.io",
-    "summary": "Add a short professional summary here.",
-    "location": {}
+    "label": "M.S. Student in Computer Engineering, Columbia University",
+    "image": "",
+    "email": "yb2636@columbia.edu",
+    "phone": "(646) 221-1046",
+    "summary": "Research interests: LLM agents, multi-agent systems, ML systems, evaluation and verification, reproducibility, trustworthy and human-centered AI.",
+    "location": {
+      "city": "New York",
+      "region": "NY",
+      "countryCode": "US"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "BrianBai093",
+        "url": "https://github.com/BrianBai093"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "brianbai",
+        "url": "https://www.linkedin.com/in/brianbai"
+      }
+    ]
   },
-  "work": [],
+  "work": [
+    {
+      "name": "Columbia University, CRIS Lab",
+      "position": "Research Assistant",
+      "location": "New York, NY",
+      "startDate": "2025-09",
+      "endDate": "Present",
+      "summary": "Advisor: Prof. Venkat Venkatasubramanian",
+      "highlights": [
+        "Developed DeepAudit, an LLM-agent framework for automated reproducibility auditing of ML papers and companion code.",
+        "Engineered claim extraction, environment provisioning, autonomous execution, LLM-driven replanning, and tolerance-aware verdict generation."
+      ]
+    },
+    {
+      "name": "Columbia University / IBM Research Collaboration",
+      "position": "Research Assistant",
+      "location": "New York, NY",
+      "startDate": "2026-02",
+      "endDate": "Present",
+      "summary": "Mentored by Dhaval Patel, Senior Technical Staff Member, IBM Research",
+      "highlights": [
+        "Proposed and optimized a Supervisor-Specialist multi-agent architecture for multi-turn industrial asset operations.",
+        "Designed cross-turn artifact memory for asset state, diagnostic hypotheses, action history, and reusable tool evidence."
+      ]
+    },
+    {
+      "name": "Neusoft Group",
+      "position": "Software Engineering Intern",
+      "location": "Guangzhou, China",
+      "startDate": "2024-07",
+      "endDate": "2024-08",
+      "summary": "",
+      "highlights": [
+        "Contributed to development and testing for a university portal system, including frontend refinement, database interface support, and cross-database data matching."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Columbia University",
+      "location": "New York, NY",
+      "area": "Computer Engineering",
+      "studyType": "M.S.",
+      "startDate": "2025-09",
+      "endDate": "2026-12",
+      "score": "3.91 / 4.00",
+      "courses": [],
+      "highlights": []
+    },
+    {
+      "institution": "Lancaster University",
+      "location": "Lancaster, UK",
+      "area": "Computer Science",
+      "studyType": "B.S. (Hons)",
+      "startDate": "2023-09",
+      "endDate": "2025-06",
+      "score": "3.73 / 4.00",
+      "courses": [],
+      "highlights": ["First Class Honours"]
+    },
+    {
+      "institution": "Beijing Jiaotong University",
+      "location": "Beijing, China",
+      "area": "Computer Science and Technology",
+      "studyType": "B.S.",
+      "startDate": "2021-09",
+      "endDate": "2023-06",
+      "score": "3.37 / 4.00",
+      "courses": [],
+      "highlights": ["BJTU-Lancaster Dual-Degree Program (2+2)"]
+    }
+  ],
+  "publications": [
+    {
+      "name": "Application and Analysis of the VGG16 Model in Facial Emotion Recognition",
+      "publisher": "Proceedings of DAML 2023",
+      "releaseDate": "2023",
+      "url": "https://doi.org/10.5220/0012799800003885",
+      "summary": "Bai, Yitong. Proceedings of DAML 2023, pp. 422-426. DOI: 10.5220/0012799800003885."
+    }
+  ],
+  "awards": [
+    {
+      "title": "Honorable Mention, Mathematical Contest in Modeling",
+      "date": "2024-03",
+      "awarder": "COMAP",
+      "summary": ""
+    },
+    {
+      "title": "Beijing Jiaotong University Scholarship for Academic Progress",
+      "date": "2022-06",
+      "awarder": "Beijing Jiaotong University",
+      "summary": "Top 5%"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "",
+      "keywords": ["Python", "C", "Java", "R", "SQL", "HTML"]
+    },
+    {
+      "name": "ML / LLM Tools",
+      "level": "",
+      "keywords": ["PyTorch", "scikit-learn", "NumPy", "pandas", "LangGraph", "RAG", "MCP"]
+    },
+    {
+      "name": "Systems",
+      "level": "",
+      "keywords": ["Linux", "Docker", "Git"]
+    }
+  ],
+  "projects": [],
   "volunteer": [],
-  "education": [],
-  "awards": [],
   "certificates": [],
-  "publications": [],
-  "skills": [],
   "languages": [],
   "interests": [],
-  "projects": [],
   "references": []
 }
