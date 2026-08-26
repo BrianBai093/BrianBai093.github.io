@@ -31,8 +31,12 @@ latest_posts:
   limit: 0
 ---
 
-I am an M.S. student in Computer Engineering at Columbia University. My research interests include LLM agents, multi-agent systems, ML systems, evaluation and verification, reproducibility, and trustworthy human-centered AI.
+I am an M.S. student in Computer Engineering at Columbia University. My research interests include LLM agents, multi-agent systems, ML systems, evaluation and verification, reproducibility, trustworthy AI, and LLM post-training.
+
+I am currently working on **Feedback Learning for EHR SQL Repair** at National Zhijiang Lab, studying when diagnostic feedback becomes a learnable signal for database agents. The project compares target-supervised SFT with target-free GRPO under controlled feedback representations.
 
 At Columbia's CRIS Lab, I work on **DeepAudit**, an agentic framework for auditing the reproducibility of machine learning papers by linking paper claims to executable evidence in companion code repositories. I am also working on **Multi-Turn AssetOps**, a Columbia / IBM Research collaboration on supervisor-specialist multi-agent systems for industrial asset operations and maintenance.
+
+I am also building **AgentHospital / Spine MDT**, an ongoing research and teaching prototype for traceable preoperative multi-agent discussion. It focuses on evidence boundaries, specialist routing, privacy-preserving image access, and conservative final-plan synthesis; it is not a medical device and does not replace clinician review.
 
 Before Columbia, I completed a B.S. (Hons) in Computer Science at Lancaster University and studied Computer Science and Technology at Beijing Jiaotong University through the BJTU-Lancaster dual-degree program.

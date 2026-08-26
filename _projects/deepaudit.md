@@ -3,7 +3,7 @@ layout: page
 title: DeepAudit
 description: Agentic claim-level reproducibility auditing for machine learning papers and code repositories.
 img:
-importance: 1
+importance: 2
 category: research
 github: https://github.com/BrianBai093/DeepAudit_0.2
 ---

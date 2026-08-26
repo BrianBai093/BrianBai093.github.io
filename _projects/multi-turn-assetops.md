@@ -3,7 +3,7 @@ layout: page
 title: Multi-Turn AssetOps
 description: Supervisor-Specialist multi-agent architecture for industrial asset operations and maintenance.
 img:
-importance: 2
+importance: 3
 category: research
 github: https://github.com/BrianBai093/AssetOpsBench
 ---

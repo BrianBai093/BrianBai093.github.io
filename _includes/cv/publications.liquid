@@ -33,10 +33,20 @@
               <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.title }}</h6>
             {% endif %}
 
-            {% if entry.publisher %}
+            {% assign venue = entry.publisher | default: entry.journal %}
+            {% if venue %}
               <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
-                <em>{{ entry.publisher }}</em>
+                <em>{{ venue }}</em>
               </h6>
+            {% endif %}
+
+            {% if entry.authors %}
+              <p class="ml-1 ml-md-4">
+                {% for author in entry.authors %}
+                  {{ author | markdownify | remove: '<p>' | remove: '</p>' -}}
+                  {%- unless forloop.last %}, {% endunless %}
+                {% endfor %}
+              </p>
             {% endif %}
 
             {% if entry.summary %}
@@ -53,10 +63,20 @@
               <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.title }}</h6>
             {% endif %}
 
-            {% if entry.publisher %}
+            {% assign venue = entry.publisher | default: entry.journal %}
+            {% if venue %}
               <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
-                <em>{{ entry.publisher }}</em>
+                <em>{{ venue }}</em>
               </h6>
+            {% endif %}
+
+            {% if entry.authors %}
+              <p class="ml-1 ml-md-4">
+                {% for author in entry.authors %}
+                  {{ author | markdownify | remove: '<p>' | remove: '</p>' -}}
+                  {%- unless forloop.last %}, {% endunless %}
+                {% endfor %}
+              </p>
             {% endif %}
 
             {% if entry.summary %}
