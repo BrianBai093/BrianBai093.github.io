@@ -31,7 +31,7 @@ latest_posts:
   limit: 0
 ---
 
-I am an M.S. student in Computer Engineering at Columbia University. My research interests include LLM agents, multi-agent systems, ML systems, evaluation and verification, reproducibility, trustworthy AI, and LLM post-training.
+My research centers on reliable agent decision-making in complex multi-agent physical and social environments, with the aim of anticipating action consequences and augmenting human decisions. More broadly, I work on LLM agents, multi-agent systems, ML systems, evaluation and verification, reproducibility, trustworthy AI, and LLM post-training.
 
 I am currently working on **Feedback Learning for EHR SQL Repair** at National Zhijiang Lab, studying when diagnostic feedback becomes a learnable signal for database agents. The project compares target-supervised SFT with target-free GRPO under controlled feedback representations.
 
