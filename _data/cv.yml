@@ -47,24 +47,25 @@ cv:
           - "BJTU-Lancaster Dual-Degree Program (2+2)"
 
     Research Experience:
-      - company: National Zhijiang Lab
+      - company: Zhejiang Lab
         position: Research Assistant
         location: Hangzhou, China
         start_date: 2026-06
         end_date: present
-        summary: "Advisor: Jiaxi Yang, Research Scientist, National Zhijiang Lab"
+        summary: "Advisor: Jiaxi Yang, Research Scientist, Zhejiang Lab"
         highlights:
           - "Project: Feedback Learning for EHR SQL Repair: SFT vs. GRPO; manuscript in preparation."
           - "Conducted a pre-registered study comparing SFT and GRPO on how diagnostic feedback shapes learning for EHR SQL repair, fine-tuning Qwen3.5-9B on MIMIC-IV EHR questions under four nested feedback levels, from a bare failure signal to repair hints."
-          - "Trained 12 QLoRA adapters across 4 feedback conditions x 3 seeds, and evaluated semantic repair success across 13 model groups and 10,400 records with task-clustered confidence intervals, permutation tests, and Holm correction."
-          - "Found no stable incremental benefit from richer feedback under SFT: matched gains of +1.0 to +2.0 percentage points did not meet the pre-registered significance bar."
+          - "Trained 12 QLoRA adapters (4 feedback conditions x 3 seeds, 1,200 samples) and evaluated semantic repair success across 13 model groups and 10,400 records, using paired comparisons with task-clustered confidence intervals, permutation tests, and Holm correction."
+          - "Found no stable incremental benefit from richer feedback under SFT: matched gains of +1.0 to +2.0 percentage points did not meet the pre-registered significance bar, a carefully bounded null result."
           - "Built a target-free GRPO pipeline with a custom binary execution reward and observed a non-monotonic feedback effect, with the intermediate L2 level reaching +10.0 points (95% CI [+4.0, +16.5], exploratory Holm-adjusted p = 0.0228), pending multi-seed confirmation."
+          - "Ran all 12 adapters on a single 24 GB GPU under a strict no-leakage protocol, with reward verification isolated in a read-only database worker that never returns gold answers or verifier diagnostics to the model."
 
       - company: Columbia University, CRIS Lab
         position: Research Assistant
         location: New York, NY
         start_date: 2025-09
-        end_date: present
+        end_date: 2026-05
         summary: "Advisor: Prof. Venkat Venkatasubramanian"
         highlights:
           - "Project: DeepAudit: Agentic Evidence-Based Auditing of ML Reproducibility; manuscript in preparation."
@@ -72,19 +73,22 @@ cv:
           - "Built a 23-step Python pipeline covering PDF-to-Markdown ingestion, table/figure-aware claim extraction, repository analysis, RAG-assisted code indexing, environment repair, autonomous execution, evidence alignment, scoring, and report generation."
           - "Formulated ML reproducibility auditing as claim-level evidence alignment rather than binary repository execution, distinguishing metric disagreement from missing data, incompatible environments, ambiguous entry points, unlogged metrics, and compute limits."
           - "Evaluated DeepAudit on 10 public ML paper-code pairs with 64 pre-specified audit targets; extracted 1,101 claims, identified 988 code-verifiable claims (89.7%), generated 49 metric contracts, and executed 52/64 experiment specifications (81.2%)."
+          - "Recovered executable or diagnostic evidence for all five initially broken repositories through bounded environment repair, autonomous execution, conservative verification, and structured failure analysis."
 
       - company: Columbia University / IBM Research Collaboration
         position: Research Assistant
         location: New York, NY
         start_date: 2026-02
-        end_date: present
+        end_date: 2026-07
         summary: "Mentored by Dhaval Patel, Senior Technical Staff Member, IBM Research"
         highlights:
           - "Project: Multi-Turn AssetOps: Supervisor-Specialist Agents for Industrial O&M."
-          - "Proposed and designed a LangGraph-based Supervisor-Specialist multi-agent architecture for multi-turn industrial asset operations and maintenance."
-          - "Designed structured cross-turn artifact reuse for sensor evidence, anomaly analyses, failure hypotheses, and maintenance recommendations."
-          - "Optimized routing, artifact reuse, and MCP execution with constraints, schema validation, duplicate-call suppression, and failure guards."
-          - "Co-developed and evaluated 16 multi-turn industrial dialogs, reporting gains in planning effectiveness, task completion, tool-time share, and follow-up latency after artifact reuse."
+          - "Proposed and designed a LangGraph-based Supervisor-Specialist multi-agent architecture for multi-turn industrial asset operations, routing user goals across data collection, time-series analysis, failure reasoning, and maintenance-planning specialists over MCP tools."
+          - "Designed structured cross-turn artifact reuse to preserve sensor datasets, anomaly analyses, failure hypotheses, and maintenance recommendations as reusable evidence across follow-up turns."
+          - "Iteratively optimized routing, artifact reuse, and MCP tool execution with domain-specific tool constraints, schema validation, duplicate-call suppression, and failure guards."
+          - "Co-developed and evaluated the system on 16 multi-turn industrial O&M dialogs covering fault diagnosis, predictive maintenance, operational monitoring, maintenance planning, and full-pipeline remediation workflows."
+          - "Reported improvements over a Plan-Execute baseline: +54.5% planning effectiveness, +37.8% task completion, tool-time share reduced from 47.3% to 26.3%, and follow-up turns approximately 4.2x faster after artifact reuse."
+          - "Analyzed system-level trade-offs between specialist routing and parallel tool execution, showing that naive parallelism can reduce API calls while increasing token/context cost and tail latency."
 
       - company: SJTU Summer Campus
         position: Project Leader
@@ -98,16 +102,6 @@ cv:
           - "Led a four-person team, coordinated task division and progress reviews, and completed both implementation and project reports."
 
     Publications and Manuscripts:
-      - title: "Towards Multi-Turn Dialog Systems for Industrial Asset Operations and Maintenance"
-        authors:
-          - Chengrui Li
-          - Rujing Li
-          - "*Yitong Bai*"
-          - Rui Li
-        journal: arXiv preprint arXiv:2605.24953
-        date: 2026
-        url: https://arxiv.org/abs/2605.24953
-
       - title: "Application and Analysis of the VGG16 Model in Facial Emotion Recognition"
         authors:
           - "*Yitong Bai*"
@@ -119,7 +113,7 @@ cv:
       - title: "Position: Agentic Science Needs Explicit Claim-Result-Computation Relationships"
         authors:
           - "*Yitong Bai*"
-        journal: Manuscript under review
+        journal: Under review at AI for MetaScience NeurIPS Workshop
         date: 2026
 
       - title: "Beyond Static Leaderboards: Predictive Validity for the Evaluation of LLM Agents"
@@ -127,7 +121,7 @@ cv:
           - Dhaval Patel
           - "*Yitong Bai*"
           - et al.
-        journal: Manuscript under review
+        journal: Under review at ACL Rolling Review (ARR)
         date: 2026
 
       - title: "The Label Is Not the Answer: Output-Schema Anchoring in Medical Multimodal MCQ Evaluation"
@@ -137,6 +131,16 @@ cv:
           - Ziyang Wang
         journal: Accepted at MICCAI 2026 Challenge MedReason
         date: 2026
+
+      - title: "Towards Multi-Turn Dialog Systems for Industrial Asset Operations and Maintenance"
+        authors:
+          - Chengrui Li
+          - Rujing Li
+          - "*Yitong Bai*"
+          - Rui Li
+        journal: arXiv preprint arXiv:2605.24953
+        date: 2026
+        url: https://arxiv.org/abs/2605.24953
 
     Industry Experience:
       - company: Neusoft Group
@@ -150,44 +154,54 @@ cv:
 
     Selected Projects:
       - name: Agentic Java Formal Verification
-        date: 2025-12
-        summary: Columbia University, Formal Verification Project
+        start_date: 2025-09
+        end_date: 2025-12
+        summary: Columbia University, Formal Verification of Hardware and Software Systems Project
         highlights:
-          - "Built an agentic Java verification assistant that translates natural-language proof goals into Java annotations and iteratively repairs verifier errors."
-          - "Designed a verification loop over OpenJML feedback, with prompt construction, error parsing, retry control, and proof-state tracking."
+          - "Developed a multi-agent prototype that connects LLM-based code understanding with Java / Spring Boot formal verification, translating source-code slices into candidate safety properties and JBMC-ready harnesses."
+          - "Designed a three-stage pipeline with a code explorer agent, property formalizer agent, and harness generator agent, producing structured artifacts for parsed code slices, inferred properties, generated harnesses, and execution logs."
+          - "Tested the prototype on application-level properties including RBAC constraints, inventory-update consistency, and status-transition safety."
 
       - name: ConvNeXt and ViT for Hierarchical Open-Set Image Classification
-        date: 2025-12
+        start_date: 2025-09
+        end_date: 2025-12
         summary: Columbia University, Neural Networks and Deep Learning Project
         highlights:
           - "Built a two-stage hierarchical open-set recognition pipeline in PyTorch for super-class and sub-class prediction."
-          - "Implemented interchangeable ImageNet-pretrained ConvNeXt and ViT backbones for controlled comparison."
-          - "Evaluated on a 6,288-image dataset with 3 super-classes and 87 sub-classes."
-          - "Improved unseen sub-class recognition from 62.24% to 82.22% using ConvNeXt on a held-out novel split."
+          - "Implemented a unified classifier framework with interchangeable ImageNet-pretrained ConvNeXt and ViT backbones for controlled comparison."
+          - "Developed reproducible training utilities, including flexible data loading, automatic validation split, checkpointing, and metric logging."
+          - "Evaluated the approach on a 6,288-image dataset with 3 super-classes and 87 sub-classes."
+          - "On a held-out novel split, improved unseen sub-class recognition from 62.24% to 82.22% using ConvNeXt; compared Softmax-thresholding (91.60%) with OpenMax (59.60%) for novelty rejection."
 
-      - name: TrueShot
-        date: 2026
-        summary: Columbia University, Computer Networks Project
+      - name: "TrueShot: P2P Blockchain Prototype for Photo Provenance Verification"
+        start_date: 2026-02
+        end_date: 2026-05
+        summary: Columbia University, Computer Networks Course Project
         highlights:
-          - "Built a Dockerized Flask LAN game service with screenshot submission, peer validation, blockchain-style logging, and tamper-evident replay."
-          - "Implemented and tested blockchain, networking, application, and web layers."
+          - "Built a peer-to-peer photo provenance prototype with tracker-based peer discovery, gossip-based transaction and block propagation, a proof-of-work blockchain, Merkle-root validation, ECDSA-signed device records, and a Flask verification UI."
+          - "Implemented security demos including forged longest-chain replacement, tracker poisoning, gossip sender URL spoofing, mempool flooding, and image tampering detection; the project report documents 69 passing tests across blockchain, network, application, and web layers."
 
       - name: Computer Vision and ML Lead, Pet Companion Robot
-        date: 2025-12
+        start_date: 2025-09
+        end_date: 2025-12
         summary: Columbia University, AIoT Project
         highlights:
-          - "Led computer vision and machine learning components for an AIoT pet robot integrating on-device perception, motion control, cloud analysis, and dashboarding."
+          - "Led the computer vision and machine learning components of an AIoT pet robot integrating on-device perception, motion control, cloud analysis, and dashboarding."
           - "Built real-time dog detection and motion control on Raspberry Pi 5 using YOLO, FastAPI, sensor fusion, and target tracking."
-          - "Developed cloud pipelines for automated image capture, behavior summarization, and a VGG16-based pet emotion classifier."
+          - "Developed cloud pipelines for automated image capture, behavior summarization, and a VGG16-based pet emotion classifier exposed through reusable APIs."
 
     Honors and Awards:
       - bullet: Honorable Mention, Mathematical Contest in Modeling, COMAP (Mar 2024)
       - bullet: Beijing Jiaotong University Scholarship for Academic Progress, Top 5% (Jun 2022)
 
     Skills:
-      - label: Programming
-        details: Python, C, Java, R, SQL, HTML
-      - label: ML / LLM Tools
-        details: PyTorch, scikit-learn, NumPy, pandas, LangGraph, LangChain, RAG, MCP / FastMCP, LiteLLM, Pydantic, OpenAI API, IBM WatsonX
+      - label: Programming Languages
+        details: Python, C, Java, R, SQL
+      - label: LLM Agents
+        details: LangGraph, LangChain, RAG, MCP / FastMCP, LiteLLM, Pydantic, OpenAI API
+      - label: LLM / ML
+        details: "PyTorch, Hugging Face Transformers, scikit-learn, NumPy, pandas, LLaMA-Factory, TRL, QLoRA, SFT, GRPO, vLLM, Weights & Biases"
+      - label: "Evaluation & Reproducibility"
+        details: pre-registered experiment protocols, paired comparisons with task-clustered confidence intervals, permutation tests, multi-seed replication
       - label: Systems / Engineering
-        details: Linux, Docker, Git, Conda / mamba / venv, pytest, Flask, FastAPI
+        details: Linux, Docker, Git, Conda / mamba / venv, pytest, FastAPI, Flask
