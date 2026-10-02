@@ -54,8 +54,8 @@ cv:
         end_date: present
         summary: "Advisor: Jiaxi Yang, Research Scientist, Zhejiang Lab"
         highlights:
-          - "Project: Feedback Learning for EHR SQL Repair: SFT vs. GRPO; manuscript in preparation."
-          - "Conducted a pre-registered study comparing SFT and GRPO on how diagnostic feedback shapes learning for EHR SQL repair, fine-tuning Qwen3.5-9B on MIMIC-IV EHR questions under four nested feedback levels, from a bare failure signal to repair hints."
+          - "Project: Diagnostic Feedback for EHR SQL Repair: A Controlled Study of Inference and Learning."
+          - "Conducted a pre-registered study comparing SFT and GRPO on how diagnostic feedback shapes learning for EHR SQL repair, fine-tuning Qwen3.5-9B&4B on MIMIC-IV EHR questions under four nested feedback levels, from a bare failure signal to repair hints."
           - "Trained 12 QLoRA adapters (4 feedback conditions x 3 seeds, 1,200 samples) and evaluated semantic repair success across 13 model groups and 10,400 records, using paired comparisons with task-clustered confidence intervals, permutation tests, and Holm correction."
           - "Found no stable incremental benefit from richer feedback under SFT: matched gains of +1.0 to +2.0 percentage points did not meet the pre-registered significance bar, a carefully bounded null result."
           - "Built a target-free GRPO pipeline with a custom binary execution reward and observed a non-monotonic feedback effect, with the intermediate L2 level reaching +10.0 points (95% CI [+4.0, +16.5], exploratory Holm-adjusted p = 0.0228), pending multi-seed confirmation."
@@ -68,7 +68,7 @@ cv:
         end_date: 2026-05
         summary: "Advisor: Prof. Venkat Venkatasubramanian"
         highlights:
-          - "Project: DeepAudit: Agentic Evidence-Based Auditing of ML Reproducibility; manuscript in preparation."
+          - "Project: DeepAudit: Agentic Evidence-Based Auditing of ML Reproducibility."
           - "Designed and implemented DeepAudit, an agentic claim-level reproducibility auditing system that maps ML paper claims to executable repository tasks, metric contracts, runtime artifacts, and structured verdicts."
           - "Built a 23-step Python pipeline covering PDF-to-Markdown ingestion, table/figure-aware claim extraction, repository analysis, RAG-assisted code indexing, environment repair, autonomous execution, evidence alignment, scoring, and report generation."
           - "Formulated ML reproducibility auditing as claim-level evidence alignment rather than binary repository execution, distinguishing metric disagreement from missing data, incompatible environments, ambiguous entry points, unlogged metrics, and compute limits."
@@ -102,18 +102,27 @@ cv:
           - "Led a four-person team, coordinated task division and progress reviews, and completed both implementation and project reports."
 
     Publications and Manuscripts:
-      - title: "Application and Analysis of the VGG16 Model in Facial Emotion Recognition"
-        authors:
-          - "*Yitong Bai*"
-        journal: Proceedings of DAML 2023, pp. 422-426
-        date: 2023
-        doi: 10.5220/0012799800003885
-        url: https://doi.org/10.5220/0012799800003885
-
       - title: "Position: Agentic Science Needs Explicit Claim-Result-Computation Relationships"
         authors:
           - "*Yitong Bai*"
         journal: Under review at AI for MetaScience NeurIPS Workshop
+        date: 2026
+
+      - title: "Diagnostic Feedback for EHR SQL Repair: A Controlled Study of Inference and Learning"
+        authors:
+          - "*Yitong Bai*"
+        journal: Under review at IEEE ICHI 2027
+        date: 2026
+
+      - title: "Interactive Industrial Operations and Maintenance with Cross-Turn Evidence Reuse"
+        authors:
+          - "*Yitong Bai*"
+          - Chengrui Li
+          - Rujing Li
+          - Rui Li
+          - Dhaval C. Patel
+          - Kaoutar El Maghraoui
+        journal: Under review at AAAI Demo 2027
         date: 2026
 
       - title: "Beyond Static Leaderboards: Predictive Validity for the Evaluation of LLM Agents"
@@ -132,15 +141,13 @@ cv:
         journal: Accepted at MICCAI 2026 Challenge MedReason
         date: 2026
 
-      - title: "Towards Multi-Turn Dialog Systems for Industrial Asset Operations and Maintenance"
+      - title: "Application and Analysis of the VGG16 Model in Facial Emotion Recognition"
         authors:
-          - Chengrui Li
-          - Rujing Li
           - "*Yitong Bai*"
-          - Rui Li
-        journal: arXiv preprint arXiv:2605.24953
-        date: 2026
-        url: https://arxiv.org/abs/2605.24953
+        journal: Proceedings of DAML 2023, pp. 422-426
+        date: 2023
+        doi: 10.5220/0012799800003885
+        url: https://doi.org/10.5220/0012799800003885
 
     Industry Experience:
       - company: Neusoft Group
