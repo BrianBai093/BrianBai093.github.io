@@ -58,6 +58,15 @@ ul.task-list input[type="checkbox"] {
 .profile {
   width: 100%;
 
+  // A phone-portrait photo is about twice as tall as it is wide, so at full
+  // column width it would push the page content off the first screen. Cap the
+  // height and crop; the offset keeps the subject in frame.
+  img {
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center 55%;
+  }
+
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
@@ -81,6 +90,10 @@ ul.task-list input[type="checkbox"] {
 @media (min-width: 576px) {
   .profile {
     width: 30%;
+
+    img {
+      max-height: 340px;
+    }
 
     .address {
       p {
